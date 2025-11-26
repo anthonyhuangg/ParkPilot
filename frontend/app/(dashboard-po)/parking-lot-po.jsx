@@ -1,10 +1,5 @@
 import { useRef, useState, useEffect } from "react";
-import {
-  View,
-  Animated,
-  PanResponder,
-  Dimensions,
-} from "react-native";
+import { View, Animated, PanResponder, Dimensions } from "react-native";
 import ThemedView from "../../components/themed-view";
 import ThemedText from "../../components/themed-text";
 import { Button } from "react-native-paper";
@@ -120,7 +115,6 @@ const ParkingLotPO = () => {
     fetchLot();
   }, [lot_id]);
 
- 
   // Set up Server-Sent Events (SSE) for real-time updates
   useEffect(() => {
     if (!mapData.length || !lot_id) return;
@@ -162,7 +156,6 @@ const ParkingLotPO = () => {
 
     return () => eventSource.close();
   }, [mapData, lot_id]);
-
 
   // Helper to calculate distance between two touch points
   const getDistance = (touches) => {
@@ -380,7 +373,6 @@ const ParkingLotPO = () => {
 
       {/* Overlay Regions */}
       <View style={PARKINGLOT.overlay} pointerEvents="box-none">
-        
         {/* Top controls */}
         <View style={PARKINGLOT.topOverlay}>
           <Spacer height={70} />

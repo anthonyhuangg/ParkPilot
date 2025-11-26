@@ -5,7 +5,7 @@ import { Provider as PaperProvider, MD3LightTheme } from "react-native-paper";
 import { ConnectionProvider } from "./connection-provider";
 import { COLOURS } from "../theme/colours";
 
-// Define custom theme for React Native Paper
+// Custom theme for React Native Paper
 const theme = {
   ...MD3LightTheme,
   colors: {

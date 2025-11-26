@@ -1,10 +1,6 @@
 import { useEffect, useState } from "react";
 import AsyncStorage from "@react-native-async-storage/async-storage";
-import {
-  View,
-  useWindowDimensions,
-  ActivityIndicator,
-} from "react-native";
+import { View, useWindowDimensions, ActivityIndicator } from "react-native";
 import * as Location from "expo-location";
 import { Button, Card } from "react-native-paper";
 import ThemedView from "../../components/themed-view";
@@ -66,9 +62,73 @@ const Overview = () => {
     router.push(`/parking-lot?lot_id=${nearestLot.lot_id}`);
   };
 
-  const handleSpotClosestEntrance = () => {
+  // Determine the entrance the driver is closest to
+  const getEntranceIdA = async (lotId) => {
+    const res = await fetch(`${API_BASE_URL}/api/parking/${lotId}/nodes`);
+    if (!res.ok) throw new Error("Failed to fetch nodes");
+
+    const data = await res.json();
+
+    const entrance = data.nodes.find(
+      (n) =>
+        n.type === "CAR_ENTRANCE" &&
+        n.label?.toLowerCase() === "car entrance a",
+    );
+
+    if (!entrance) throw new Error("Entrance A not found");
+
+    return entrance.id;
+  };
+
+  // Handle the spot closest to entrance button
+  const handleSpotClosestEntrance = async () => {
     if (!nearestLot) return;
-    router.push(`/navigation?mode=closest&lot_id=${nearestLot.lot_id}`);
+
+    try {
+      const lotId = nearestLot.lot_id;
+      const ttl = 15; // reservation in minutes
+      const entranceId = await getEntranceIdA(lotId);
+
+      const resSpot = await fetch(
+        `${API_BASE_URL}/api/parking/${lotId}/find-spot?entrance_id=${entranceId}`,
+      );
+
+      if (!resSpot.ok) throw new Error("Failed to fetch closest spot");
+
+      const data = await resSpot.json();
+      const closestSpotId = data.spot_node_id;
+
+      if (!closestSpotId || isNaN(closestSpotId)) {
+        console.error("Invalid closest spot ID:", closestSpotId);
+        return;
+      }
+
+      const mapRes = await fetch(`${API_BASE_URL}/api/parking/${lotId}/nodes`);
+      if (!mapRes.ok) throw new Error("Failed to fetch parking lot map");
+      const mapData = await mapRes.json();
+
+      const node = mapData.nodes.find((n) => n.id === closestSpotId);
+      const closestSpotLabel = node?.label ?? `Spot ${closestSpotId}`;
+
+      await AsyncStorage.setItem("selected_spot_id", closestSpotId.toString());
+      await AsyncStorage.setItem("selected_spot_label", closestSpotLabel);
+      await AsyncStorage.setItem("selected_lot_id", lotId.toString());
+
+      const resReserve = await fetch(
+        `${API_BASE_URL}/api/parking/${lotId}/update_status?node_id=${closestSpotId}&status=RESERVED&ttl=${ttl}`,
+        { method: "POST", headers: { "Content-Type": "application/json" } },
+      );
+
+      if (!resReserve.ok) throw new Error("Failed to reserve spot");
+      const reserveData = await resReserve.json();
+      console.log("Spot reserved successfully:", reserveData);
+
+      router.push(
+        `/navigation?lot_id=${lotId}&start=${entranceId}&end=${closestSpotId}`,
+      );
+    } catch (err) {
+      console.error("Error handling closest spot:", err);
+    }
   };
 
   const cardWidth = Math.min(width * 0.9, 420);

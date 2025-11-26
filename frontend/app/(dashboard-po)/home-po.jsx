@@ -25,14 +25,14 @@ export default function DashboardScreenPO() {
       title: "Carbon",
       focusedIcon: "leaf",
       component: Carbon,
-      testID: "nav-carbon-po"
+      testID: "nav-carbon-po",
     },
     {
       key: "profile",
       title: "Profile",
       focusedIcon: "account",
       component: Profile,
-      testID: "nav-profile-po"
+      testID: "nav-profile-po",
     },
   ];
 

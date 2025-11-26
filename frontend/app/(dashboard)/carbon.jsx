@@ -68,7 +68,6 @@ const Carbon = () => {
       <Spacer size={SPACING.xl} />
 
       <View style={{ width: "90%", alignItems: "center" }}>
-        
         {/* Carbon Saved */}
         <Card style={GlobalStyles.cardLarge} mode="elevated">
           <Card.Content style={GlobalStyles.cardContentCentered}>

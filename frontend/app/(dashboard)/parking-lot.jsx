@@ -287,7 +287,7 @@ export default function ParkingLot() {
       const carbonPayload = {
         user_id: Number(userId),
         lot_id: lotId,
-        distance_saved_m: 150,
+        distance_traveled_m: 150,
       };
 
       await fetch(`${API_BASE_URL}/carbon/record-saving`, {

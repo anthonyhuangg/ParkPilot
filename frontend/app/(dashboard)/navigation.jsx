@@ -166,6 +166,30 @@ export default function Navigation() {
     [mode, lotId, endId, worldRotation, animatedAngle],
   );
 
+  // record the carbon savings
+  const recordCarbonSaving = async (lotId, distanceMeters) => {
+    try {
+      const userId = await AsyncStorage.getItem("user_id");
+      if (!userId) return;
+
+      const carbonPayload = {
+        user_id: Number(userId),
+        lot_id: lotId,
+        distance_traveled_m: distanceMeters,
+      };
+
+      fetch(`${API_BASE_URL}/carbon/record-saving`, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(carbonPayload),
+      }).catch((err) => {
+        console.error("Carbon saving POST failed:", err);
+      });
+    } catch (err) {
+      console.error("Carbon saving error:", err);
+    }
+  };
+
   // Animate a segment of the route
   const animateSegment = useCallback(
     async (i) => {
@@ -184,6 +208,10 @@ export default function Navigation() {
         const finalNode = route[route.length - 1];
         setFrame((f) => ({ ...f, x: finalNode[0], y: finalNode[1] }));
         setArrived(true);
+
+        const distance = (routeRef.current.length - 1) * 2.5;
+        recordCarbonSaving(lotId, distance);
+
         if (mode === "exit") {
           Alert.alert("Exit Complete", "You have exited the carpark.", [
             {

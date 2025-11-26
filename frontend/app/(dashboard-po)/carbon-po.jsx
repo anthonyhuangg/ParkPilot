@@ -191,9 +191,8 @@ const CarbonPO = () => {
     <ThemedView style={GlobalStyles.container}>
       <SafeAreaView style={{ flex: 1 }}>
         <ScrollView contentContainerStyle={GlobalStyles.scrollContainer}>
-          
           {/* Top bar with lot selection & date picker */}
-          <View style={styles.topBarWrapper}>          
+          <View style={styles.topBarWrapper}>
             <Button
               mode="outlined"
               onPress={() => setShowLotModal(true)}
@@ -285,14 +284,16 @@ const CarbonPO = () => {
           <Spacer height={30} />
 
           {/* Header */}
-          <ThemedText style={TEXT.heading} testID="po-carbon-title" >Carbon Savings Dashboard</ThemedText>
+          <ThemedText style={TEXT.heading} testID="po-carbon-title">
+            Carbon Savings Dashboard
+          </ThemedText>
 
           <Spacer height={8} />
           <ThemedText style={styles.subText}>
             {selectedLot?.lot_name ?? "Loading..."} — {formattedDate}
           </ThemedText>
           <Spacer height={25} />
-          
+
           {/* Contributors card */}
           <Card style={CardStyles.card}>
             <Card.Content>

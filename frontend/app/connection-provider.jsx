@@ -1,10 +1,4 @@
-import {
-  createContext,
-  useState,
-  useEffect,
-  useRef,
-  useCallback,
-} from "react";
+import { createContext, useState, useEffect, useRef, useCallback } from "react";
 import NetInfo from "@react-native-community/netinfo";
 import { Alert } from "react-native";
 import PropTypes from "prop-types";

@@ -5,7 +5,7 @@ import ThemedView from "../components/themed-view";
 import Spacer from "../components/spacer";
 import ThemedText from "../components/themed-text";
 
-import { COLOURS} from "./theme";
+import { COLOURS } from "../theme";
 
 const { width: SCREEN_WIDTH } = Dimensions.get("window");
 

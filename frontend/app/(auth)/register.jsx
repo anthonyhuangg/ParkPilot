@@ -94,11 +94,7 @@ const Register = () => {
       await AsyncStorage.setItem("user_id", data.user.id.toString());
 
       const userRole = data.user.role?.toLowerCase();
-      router.replace(
-        userRole === "dr"
-          ? "/dashboard/Home"
-          : "/dashboard-po/HomePo"
-      );
+      router.replace(userRole === "dr" ? "/home" : "/home-po");
       Alert.alert("Success", "User registered successfully!");
     } catch (err) {
       console.error(err);

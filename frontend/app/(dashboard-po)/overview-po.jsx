@@ -56,6 +56,7 @@ const OverviewPO = () => {
     <Card
       style={CardStyles.cardpo}
       onPress={() => handleParkingLotSelect(item.lot_id)}
+      testID={`lot-item-${item.lot_id}`}
     >
       <Card.Content>
         <ThemedText
@@ -108,7 +109,6 @@ const OverviewPO = () => {
           renderItem={renderLot}
           contentContainerStyle={GlobalStyles.listContainer}
           showsVerticalScrollIndicator={false}
-          testID={(item) => `lot-item-${item.lot_id}`}
           ListEmptyComponent={
             <ThemedText style={styles.noResults}>
               No parking lots found.

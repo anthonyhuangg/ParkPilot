@@ -110,7 +110,7 @@ const HistoricOccupancy = () => {
   });
 
   const displayedLabels = times.map((t, i) => (i % 4 === 0 ? t : ""));
-  
+
   const handleGoBack = () => router.back();
 
   // Handle date selection from date picker
