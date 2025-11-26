@@ -1,0 +1,79 @@
+appId: com.anonymous.parkpilot
+---
+- launchApp
+
+- tapOn:
+    id: "welcome-login-button"
+
+- tapOn:
+    id: "email-input"
+- inputText: "po@gmail.com"
+
+- tapOn:
+    id: "password-input"
+- inputText: "Password1"
+
+- hideKeyboard
+- tapOn:
+    id: "login-button"
+
+- tapOn: "OK"
+
+- extendedWaitUntil:
+    visible:
+      id: "searchbar"
+    timeout: 3000
+- assertVisible:
+    id: "searchbar"
+- assertVisible:
+    id: "lot-item-1"
+
+- tapOn:
+    id: "lot-item-1"
+
+- assertVisible:
+    id: "histocc-btn"
+
+- tapOn:
+    id: "histocc-btn"
+
+- assertVisible:
+    id: "histocc-title"
+
+- tapOn:
+    id: "po-histocc-date-picker-btn"
+
+- tapOn: "Previous"
+
+- tapOn: "15"
+
+- tapOn: "OK"
+
+- assertVisible:
+    id: "histocc-title"
+
+- tapOn:
+    id: "ho-back-btn
+
+- assertVisible:
+    id: "histocc-btn"
+
+- tapOn:
+    id: "pl-back-btn
+
+- assertVisible:
+    id: "searchbar"
+
+- tapOn:
+    id: "nav-profile-po"
+
+- assertVisible:
+    id: "logout-btn"
+
+- tapOn:
+    id: "logout-btn"
+
+- assertVisible:
+    id: "welcome-login-button"
+    
+    

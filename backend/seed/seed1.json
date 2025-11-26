@@ -1,0 +1,698 @@
+
+{
+  "name": "2 Market Street Car Park",
+  "location": "186 Sussex Street, Sydney CBD NSW 2000",
+  "width": 10.0,
+  "height": 10.0,
+  "latitude": 33.870379590672336,
+  "longitude": 151.2040471998921,
+  "nodes": [
+    {
+      "id": 1,
+      "type": "CAR_ENTRANCE",
+      "x": 0.0,
+      "y": 2.0,
+      "label": "Car Entrance A",
+      "status": "AVAILABLE"
+    },
+    {
+      "id": 2,
+      "type": "CAR_EXIT",
+      "x": 0.0,
+      "y": 7.0,
+      "label": "Car Exit A",
+      "status": "AVAILABLE"
+    },
+    {
+      "id": 3,
+      "type": "PARKING_SPOT",
+      "x": 1.0,
+      "y": 1.0,
+      "orientation": 270.0,
+      "label": "A1",
+      "status": "AVAILABLE"
+    },
+    {
+      "id": 4,
+      "type": "ROAD",
+      "x": 1.0,
+      "y": 2.0,
+      "status": "AVAILABLE"
+    },
+    {
+      "id": 5,
+      "type": "PARKING_SPOT",
+      "x": 1.0,
+      "y": 3.0,
+      "orientation": 90.0,
+      "label": "A8",
+      "status": "AVAILABLE"
+    },
+		{
+      "id": 6,
+      "type": "PARKING_SPOT",
+      "x": 1.0,
+      "y": 6.0,
+      "orientation": 270.0,
+      "label": "A19",
+      "status": "AVAILABLE"
+    },
+		{
+      "id": 7,
+      "type": "ROAD",
+      "x": 1.0,
+      "y": 7.0,
+      "status": "AVAILABLE"
+    },
+		{
+      "id": 8,
+      "type": "PARKING_SPOT",
+      "x": 1.0,
+      "y": 8.0,
+      "orientation": 90.0,
+      "label": "A20",
+      "status": "AVAILABLE"
+    },
+		{
+      "id": 9,
+      "type": "PARKING_SPOT",
+      "x": 2.0,
+      "y": 1.0,
+      "orientation": 270.0,
+      "label": "A2",
+      "status": "AVAILABLE"
+    },
+    {
+      "id": 10,
+      "type": "ROAD",
+      "x": 2.0,
+      "y": 2.0,
+      "status": "AVAILABLE"
+    },
+    {
+      "id": 11,
+      "type": "PARKING_SPOT",
+      "x": 2.0,
+      "y": 3.0,
+      "orientation": 90.0,
+      "label": "A9",
+      "status": "AVAILABLE"
+    },
+    {
+      "id": 12,
+      "type": "PARKING_SPOT",
+      "x": 2.0,
+      "y": 6.0,
+      "orientation": 270.0,
+      "label": "A18",
+      "status": "AVAILABLE"
+    },
+    {
+      "id": 13,
+      "type": "ROAD",
+      "x": 2.0,
+      "y": 7.0,
+      "status": "AVAILABLE"
+    },
+    {
+      "id": 14,
+      "type": "PARKING_SPOT",
+      "x": 2.0,
+      "y": 8.0,
+      "orientation": 90.0,
+      "label": "A21",
+      "status": "OCCUPIED"
+    },
+    {
+      "id": 15,
+      "type": "PARKING_SPOT",
+      "x": 3.0,
+      "y": 1.0,
+      "orientation": 270.0,
+      "label": "A3",
+      "status": "AVAILABLE"
+    },
+    {
+      "id": 16,
+      "type": "ROAD",
+      "x": 3.0,
+      "y": 2.0,
+      "status": "AVAILABLE"
+    },
+    {
+      "id": 17,
+      "type": "PARKING_SPOT",
+      "x": 3.0,
+      "y": 3.0,
+      "orientation": 90.0,
+      "label": "A10",
+      "status": "AVAILABLE"
+    },
+    {
+      "id": 18,
+      "type": "PARKING_SPOT",
+      "x": 3.0,
+      "y": 6.0,
+      "orientation": 270.0,
+      "label": "A17",
+      "status": "AVAILABLE"
+    },
+    {
+      "id": 19,
+      "type": "ROAD",
+      "x": 3.0,
+      "y": 7.0,
+      "status": "AVAILABLE"
+    },
+    {
+      "id": 20,
+      "type": "PARKING_SPOT",
+      "x": 3.0,
+      "y": 8.0,
+      "orientation": 90.0,
+      "label": "A22",
+      "status": "OCCUPIED"
+    },
+    {
+      "id": 21,
+      "type": "PARKING_SPOT",
+      "x": 4.0,
+      "y": 1.0,
+      "orientation": 270.0,
+      "label": "A4",
+      "status": "AVAILABLE"
+    },
+    {
+      "id": 22,
+      "type": "ROAD",
+      "x": 4.0,
+      "y": 2.0,
+      "status": "AVAILABLE"
+    },
+    {
+      "id": 23,
+      "type": "PARKING_SPOT",
+      "x": 4.0,
+      "y": 3.0,
+      "orientation": 90.0,
+      "label": "A11",
+      "status": "AVAILABLE"
+    },
+    {
+      "id": 24,
+      "type": "PARKING_SPOT",
+      "x": 4.0,
+      "y": 6.0,
+      "orientation": 270.0,
+      "label": "A16",
+      "status": "OCCUPIED"
+    },
+    {
+      "id": 25,
+      "type": "ROAD",
+      "x": 4.0,
+      "y": 7.0,
+      "status": "AVAILABLE"
+    },
+    {
+      "id": 26,
+      "type": "PARKING_SPOT",
+      "x": 4.0,
+      "y": 8.0,
+      "orientation": 90.0,
+      "label": "A23",
+      "status": "AVAILABLE"
+    },
+    {
+      "id": 27,
+      "type": "PARKING_SPOT",
+      "x": 5.0,
+      "y": 1.0,
+      "orientation": 270.0,
+      "label": "A5",
+      "status": "AVAILABLE"
+    },
+    {
+      "id": 28,
+      "type": "ROAD",
+      "x": 5.0,
+      "y": 2.0,
+      "status": "AVAILABLE"
+    },
+    {
+      "id": 29,
+      "type": "PARKING_SPOT",
+      "x": 5.0,
+      "y": 3.0,
+      "orientation": 90.0,
+      "label": "A12",
+      "status": "AVAILABLE"
+    },
+    {
+      "id": 30,
+      "type": "PARKING_SPOT",
+      "x": 5.0,
+      "y": 6.0,
+      "orientation": 270.0,
+      "label": "A15",
+      "status": "OCCUPIED"
+    },
+    {
+      "id": 31,
+      "type": "ROAD",
+      "x": 5.0,
+      "y": 7.0,
+      "status": "AVAILABLE"
+    },
+    {
+      "id": 32,
+      "type": "PARKING_SPOT",
+      "x": 5.0,
+      "y": 8.0,
+      "orientation": 90.0,
+      "label": "A24",
+      "status": "AVAILABLE"
+    },
+    {
+      "id": 33,
+      "type": "PARKING_SPOT",
+      "x": 6.0,
+      "y": 1.0,
+      "orientation": 270.0,
+      "label": "A6",
+      "status": "AVAILABLE"
+    },
+    {
+      "id": 34,
+      "type": "ROAD",
+      "x": 6.0,
+      "y": 2.0,
+      "status": "AVAILABLE"
+    },
+    {
+      "id": 35,
+      "type": "PARKING_SPOT",
+      "x": 6.0,
+      "y": 3.0,
+      "orientation": 90.0,
+      "label": "A13",
+      "status": "AVAILABLE"
+    },
+    {
+      "id": 36,
+      "type": "PARKING_SPOT",
+      "x": 6.0,
+      "y": 6.0,
+      "orientation": 270.0,
+      "label": "A14",
+      "status": "AVAILABLE"
+    },
+    {
+      "id": 37,
+      "type": "ROAD",
+      "x": 6.0,
+      "y": 7.0,
+      "status": "AVAILABLE"
+    },
+    {
+      "id": 38,
+      "type": "PARKING_SPOT",
+      "x": 6.0,
+      "y": 8.0,
+      "orientation": 90.0,
+      "label": "A25",
+      "status": "AVAILABLE"
+    },
+    {
+      "id": 39,
+      "type": "PARKING_SPOT",
+      "x": 7.0,
+      "y": 1.0,
+      "orientation": 270.0,
+      "label": "A7",
+      "status": "AVAILABLE"
+    },
+    {
+      "id": 40,
+      "type": "ROAD",
+      "x": 7.0,
+      "y": 2.0,
+      "status": "AVAILABLE"
+    },
+    {
+      "id": 41,
+      "type": "ROAD",
+      "x": 7.0,
+      "y": 3.0,
+      "status": "AVAILABLE"
+    },
+    {
+      "id": 42,
+      "type": "ROAD",
+      "x": 7.0,
+      "y": 4.0,
+      "status": "AVAILABLE"
+    },
+    {
+      "id": 43,
+      "type": "ROAD",
+      "x": 7.0,
+      "y": 5.0,
+      "status": "AVAILABLE"
+    },
+    {
+      "id": 44,
+      "type": "ROAD",
+      "x": 7.0,
+      "y": 6.0,
+      "status": "AVAILABLE"
+    },
+    {
+      "id": 45,
+      "type": "ROAD",
+      "x": 7.0,
+      "y": 7.0,
+      "status": "AVAILABLE"
+    },
+    {
+      "id": 46,
+      "type": "PARKING_SPOT",
+      "x": 7.0,
+      "y": 8.0,
+      "orientation": 90.0,
+      "label": "A26",
+      "status": "AVAILABLE"
+    },
+    {
+      "id": 47,
+      "type": "PARKING_SPOT",
+      "x": 8.0,
+      "y": 2.0,
+      "orientation": 180.0,
+      "label": "A27",
+      "status": "AVAILABLE"
+    },
+    {
+      "id": 48,
+      "type": "PARKING_SPOT",
+      "x": 8.0,
+      "y": 3.0,
+      "orientation": 180.0,
+      "label": "A28",
+      "status": "AVAILABLE"
+    },
+    {
+      "id": 49,
+      "type": "PARKING_SPOT",
+      "x": 8.0,
+      "y": 4.0,
+      "orientation": 180.0,
+      "label": "A29",
+      "status": "AVAILABLE"
+    },
+    {
+      "id": 50,
+      "type": "PARKING_SPOT",
+      "x": 8.0,
+      "y": 5.0,
+      "orientation": 180.0,
+      "label": "A30",
+      "status": "AVAILABLE"
+    },
+    {
+      "id": 51,
+      "type": "PARKING_SPOT",
+      "x": 8.0,
+      "y": 6.0,
+      "orientation": 180.0,
+      "label": "A31",
+      "status": "AVAILABLE"
+    },
+    {
+      "id": 52,
+      "type": "PARKING_SPOT",
+      "x": 8.0,
+      "y": 7.0,
+      "orientation": 180.0,
+      "label": "A32",
+      "status": "AVAILABLE"
+    }
+	],
+  "edges": [
+    {
+      "from_node_id": 1,
+      "to_node_id": 4,
+      "bidirectional": true
+    },
+    {
+      "from_node_id": 3,
+      "to_node_id": 4,
+      "bidirectional": true
+    },
+    {
+      "from_node_id": 4,
+      "to_node_id": 5,
+      "bidirectional": true
+    },
+    {
+      "from_node_id": 2,
+      "to_node_id": 7,
+      "bidirectional": true
+    },
+    {
+      "from_node_id": 6,
+      "to_node_id": 7,
+      "bidirectional": true
+    },
+    {
+      "from_node_id": 7,
+      "to_node_id": 8,
+      "bidirectional": true
+    },
+    {
+      "from_node_id": 4,
+      "to_node_id": 10,
+      "bidirectional": true
+    },
+    {
+      "from_node_id": 9,
+      "to_node_id": 10,
+      "bidirectional": true
+    },
+    {
+      "from_node_id": 10,
+      "to_node_id": 11,
+      "bidirectional": true
+    },
+    {
+      "from_node_id": 7,
+      "to_node_id": 13,
+      "bidirectional": true
+    },
+    {
+      "from_node_id": 12,
+      "to_node_id": 13,
+      "bidirectional": true
+    },
+    {
+      "from_node_id": 13,
+      "to_node_id": 14,
+      "bidirectional": true
+    },
+    {
+      "from_node_id": 10,
+      "to_node_id": 16,
+      "bidirectional": true
+    },
+    {
+      "from_node_id": 15,
+      "to_node_id": 16,
+      "bidirectional": true
+    },
+    {
+      "from_node_id": 16,
+      "to_node_id": 17,
+      "bidirectional": true
+    },
+    {
+      "from_node_id": 13,
+      "to_node_id": 19,
+      "bidirectional": true
+    },
+    {
+      "from_node_id": 18,
+      "to_node_id": 19,
+      "bidirectional": true
+    },
+    {
+      "from_node_id": 19,
+      "to_node_id": 20,
+      "bidirectional": true
+    },
+    {
+      "from_node_id": 16,
+      "to_node_id": 22,
+      "bidirectional": true
+    },
+    {
+      "from_node_id": 21,
+      "to_node_id": 22,
+      "bidirectional": true
+    },
+    {
+      "from_node_id": 22,
+      "to_node_id": 23,
+      "bidirectional": true
+    },
+    {
+      "from_node_id": 19,
+      "to_node_id": 25,
+      "bidirectional": true
+    },
+    {
+      "from_node_id": 24,
+      "to_node_id": 25,
+      "bidirectional": true
+    },
+    {
+      "from_node_id": 25,
+      "to_node_id": 26,
+      "bidirectional": true
+    },
+    {
+      "from_node_id": 22,
+      "to_node_id": 28,
+      "bidirectional": true
+    },
+    {
+      "from_node_id": 27,
+      "to_node_id": 28,
+      "bidirectional": true
+    },
+    {
+      "from_node_id": 28,
+      "to_node_id": 29,
+      "bidirectional": true
+    },
+    {
+      "from_node_id": 25,
+      "to_node_id": 31,
+      "bidirectional": true
+    },
+    {
+      "from_node_id": 30,
+      "to_node_id": 31,
+      "bidirectional": true
+    },
+    {
+      "from_node_id": 31,
+      "to_node_id": 32,
+      "bidirectional": true
+    },
+    {
+      "from_node_id": 28,
+      "to_node_id": 34,
+      "bidirectional": true
+    },
+    {
+      "from_node_id": 33,
+      "to_node_id": 34,
+      "bidirectional": true
+    },
+    {
+      "from_node_id": 34,
+      "to_node_id": 35,
+      "bidirectional": true
+    },
+    {
+      "from_node_id": 31,
+      "to_node_id": 37,
+      "bidirectional": true
+    },
+    {
+      "from_node_id": 36,
+      "to_node_id": 37,
+      "bidirectional": true
+    },
+    {
+      "from_node_id": 37,
+      "to_node_id": 38,
+      "bidirectional": true
+    },
+    {
+      "from_node_id": 34,
+      "to_node_id": 40,
+      "bidirectional": true
+    },
+    {
+      "from_node_id": 37,
+      "to_node_id": 45,
+      "bidirectional": true
+    },
+    {
+      "from_node_id": 39,
+      "to_node_id": 40,
+      "bidirectional": true
+    },
+    {
+      "from_node_id": 40,
+      "to_node_id": 41,
+      "bidirectional": true
+    },
+    {
+      "from_node_id": 41,
+      "to_node_id": 42,
+      "bidirectional": true
+    },
+    {
+      "from_node_id": 42,
+      "to_node_id": 43,
+      "bidirectional": true
+    },
+    {
+      "from_node_id": 43,
+      "to_node_id": 44,
+      "bidirectional": true
+    },
+    {
+      "from_node_id": 44,
+      "to_node_id": 45,
+      "bidirectional": true
+    },
+    {
+      "from_node_id": 45,
+      "to_node_id": 46,
+      "bidirectional": true
+    },
+    {
+      "from_node_id": 40,
+      "to_node_id": 47,
+      "bidirectional": true
+    },
+    {
+      "from_node_id": 41,
+      "to_node_id": 48,
+      "bidirectional": true
+    },
+    {
+      "from_node_id": 42,
+      "to_node_id": 49,
+      "bidirectional": true
+    },
+    {
+      "from_node_id": 43,
+      "to_node_id": 50,
+      "bidirectional": true
+    },
+    {
+      "from_node_id": 44,
+      "to_node_id": 51,
+      "bidirectional": true
+    },
+    {
+      "from_node_id": 45,
+      "to_node_id": 52,
+      "bidirectional": true
+    }
+  ]
+}

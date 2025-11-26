@@ -1,0 +1,109 @@
+appId: com.anonymous.parkpilot
+---
+- launchApp
+
+# login
+- tapOn:
+    id: "welcome-login-button"
+
+- tapOn:
+    id: "email-input"
+- inputText: "driver@gmail.com"
+
+- tapOn:
+    id: "password-input"
+- inputText: "Password1"
+
+- hideKeyboard
+- tapOn:
+    id: "login-button"
+
+- tapOn: "OK"
+
+- extendedWaitUntil:
+    visible:
+      id: "select-parking-spot-btn"
+    timeout: 3000
+- assertVisible:
+    id: "select-parking-spot-btn"
+
+
+# Change user details and logout
+- tapOn:
+    id: "nav-profile"
+
+- assertVisible:
+    id: "logout-btn"
+
+
+- tapOn:
+    id: "change-name"
+- inputText: "1"
+- hideKeyboard
+- tapOn:
+    id: "change-email"
+- pressKey: backspace
+- hideKeyboard
+- tapOn:
+    id: "change-reg"
+- inputText: "1"
+- hideKeyboard
+- tapOn:
+    id: "save-changes-btn"
+- tapOn: "OK"
+- tapOn:
+    id: "logout-btn"
+
+- assertVisible:
+    id: "welcome-login-button"
+
+# login again with new details
+- tapOn:
+    id: "welcome-login-button"
+
+- tapOn:
+    id: "email-input"
+- inputText: "driver@gmail.co"
+
+- tapOn:
+    id: "password-input"
+- inputText: "Password1"
+
+- hideKeyboard
+- tapOn:
+    id: "login-button"
+
+- tapOn: "OK"
+
+- extendedWaitUntil:
+    visible:
+      id: "select-parking-spot-btn"
+    timeout: 3000
+- assertVisible:
+    id: "select-parking-spot-btn"
+
+# change details back and log out
+- tapOn:
+    id: "nav-profile"
+
+- assertVisible:
+    id: "logout-btn"
+- tapOn:
+    id: "change-name"
+- pressKey: backspace
+- hideKeyboard
+- tapOn:
+    id: "change-email"
+- inputText: "m"
+- hideKeyboard
+- tapOn:
+    id: "change-reg"
+- hideKeyboard
+- tapOn:
+    id: "save-changes-btn"
+- tapOn: "OK"
+- tapOn:
+    id: "logout-btn"
+
+- assertVisible:
+    id: "welcome-login-button"

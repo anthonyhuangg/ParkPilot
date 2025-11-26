@@ -1,0 +1,29 @@
+appId: com.anonymous.parkpilot
+---
+- launchApp
+- tapOn:
+    id: "welcome-login-button"
+- tapOn:
+    id: "email-input"
+- inputText: "driver@gmail.com"
+- tapOn:
+    id: "password-input"
+- inputText: "Password1"
+- hideKeyboard
+- tapOn:
+    id: "login-button"
+- tapOn: "OK"
+- assertVisible:
+    id: "select-parking-spot-btn"
+- tapOn:
+    id: "select-closest-spot-btn"
+
+- assertVisible:
+    id: "exit-parking-btn"
+- tapOn:
+    id: "exit-parking-btn"
+
+- tapOn: "Return to Dashboard"
+
+- assertVisible:
+    id: "select-parking-spot-btn"
